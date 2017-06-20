@@ -1,0 +1,148 @@
+.page{
+    width: 8.5in;
+    height: 11in;
+    max-width: 8.5in;
+    max-height: 11in;
+    display: block;
+    padding-top:10px;
+   
+    z-index: -2;
+    /*page-break-before: always;*/
+    page-break-inside: avoid;
+    clear: both;
+    background: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.row{ clear: both;
+    margin-left:15px;
+    margin-right:15px; }
+.titleBar{
+    height:auto;
+    
+}
+
+.titleBar hr {
+    margin-top:5px;
+    margin-bottom:5px;
+}
+.titleBar p{
+    text-align:center;
+    font-size:12px;
+}
+.titleBar p:nth-child(3){
+    font-weight:bolder;
+}
+.green{
+    background-color:green;
+}
+.blue{background-color:blue;}
+.row{
+    height:auto;
+    position:relative;
+}
+.tableHeaders >*{
+    border:1px solid black;
+}
+.tableHeaders {
+    height:46px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.tableHeaders > div {
+    height:100%;
+    vertical-align:middle
+}
+
+p{
+    font-size:10px;
+}
+body{
+    background: #555;
+    position: relative;
+    z-index: -3;
+}
+body *{
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact;
+    
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+}
+strong{
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+.col-xs-1{
+    padding-right:5px;
+    padding-left:5px;
+}
+.entry{
+    height:70px;
+}
+.entry>div{
+    border: 1px solid black;
+    height:100%;
+}
+.entry>div p{
+    margin-bottom:0px;
+}
+.minMargin {
+    margin-right:5px;
+    margin-left:5px;
+    
+}
+.noPadding {
+    padding-left:0px;
+    padding-right:0px;
+    margin: 0px;
+}
+.entry .noPadding p{
+    border-bottom:1px solid black;
+    padding-left:2px;
+    margin-right:-10px;
+    
+}
+.entry .noPadding p:last-child{
+    border:none;
+}
+.marketValue:first-child{
+    height:100%;
+    padding-left:0px;
+    padding-right:10px;
+    margin:0;
+    border-right:1px solid black;
+}
+.marketValue:nth-child(2){
+    height:100%;
+    padding-left:0px;
+    padding-right:10px;
+    margin:0;
+    text-align:right;
+    border-right:1px solid black;
+}
+.marketValue:nth-child(2) p{
+    padding-right:5px;
+}
+
+.amountLost{
+    height:100%;
+    padding-left:0px;
+    padding-right:10px;
+    margin:0;
+    border-right:1px solid black;
+}
+.amountLost p{
+    margin-right:-5px;
+    padding-right:5px;
+    text-align:right;
+}
+h2{
+    font-size:24px;
+    margin-bottom:10px;
+    border-bottom:2px solid black;
+    text-align:center;
+}
+

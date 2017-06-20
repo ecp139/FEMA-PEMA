@@ -1,0 +1,301 @@
+<!--<head>
+ <link rel="stylesheet" href="RA_CSS.css">
+</head>
+-->
+<html>
+	<head>
+	<title>
+	Individual Damage
+	</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link href="RA_CSS.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<title>
+	Individual Home Damage
+	</title>
+<div class="build-wrap">
+</div>
+
+</head>
+<body>
+<form id="rendered-form">
+
+	<div class="">
+	<h1 type="h1" class="header pagetitle" name="" id=""> Individual Damage Assesment(Home)</h1>
+	</div>
+
+    <div class="fb-radio form-group field-primary-renter">
+    <label for="primary-renter" class="fb-radio-group-label">Are you the Primary Home Owner or renter?
+    <span class="required">*
+    </span>
+    </label>
+      <div class="radio-group">
+      <input value="option-1" type="radio" required="" class="radio-group" name="primary-renter" id="primary-renter-0" aria-required="true" checked="">
+       <label for="owner-renter-0">Primary Home
+       </label>
+       		<br>
+       <input value="option-2" type="radio" required="" class="radio-group" name="primary-renter" id="primary-renter-1" aria-required="true">
+        <label for="primary-renter-1">Renter
+        </label>
+        </div>
+    </div>
+
+
+	<div class="row">
+	<div class="fb-text form-group field-longitude col-sm-2">
+ 		<label for="longitude" class="fb-text-label">Longitude:
+			<span class="required">*</span>
+ 		</label>
+	</div>
+	<div class="fb-text form-group field-longitude col-sm-offset-0 col-sm-2" >
+  		<input type="text" required="" class="form-control" name="longitude" id="longitude" aria-required="true">
+  </div>
+
+
+	<div class ="row">
+  <div class="fb-text form-group field-latitude col-sm-offset-1 col-sm-2">
+ 		<label for="latitude" class="fb-text-label">Latitude:
+		<span class="required">*</span>
+ 		</label>
+	</div>
+		<div class="fb-text form-group field-latitude col-sm-offset-0 col-sm-2">
+  		<input type="text" required="" class="form-control" name="latitude" id="latitude" aria-required="true">
+  	</div>
+</div>
+</div>
+
+    <div class="fb-undefined form-group field-location-comments">
+        <label for="location-comments" class="fb-textarea-label col-sm-offset-0 col-sm-5">Enter any location comments:
+        </label>
+        <textarea type="textarea" required="" class="form-control" name="location-comments" id="location-comments" aria-required="true">
+        </textarea>
+    </div>
+
+	<div class="">
+	<h1 type="h1" class="header col-sm-offset-0 col-sm-12" name="" id="">Enter amount of damages to home in each area (if available)</h1>
+	<br>
+	</div>
+
+<div class="row">
+	<div class="fb-text form-group field-foundation">
+ 		<label for="foundation" class="fb-text-label col-sm-offset-1 col-sm-3">Foundation:
+			<span class="required">*</span>
+ 		</label>
+	</div>
+	<div class="fb-text form-group field-foundation col-sm-offset-1 col-sm-4">
+  		<input type="text" required="" class="form-control" name="foundation" id="foundation" aria-required="true">
+  </div>
+</div>
+
+<div class="row">
+	<div class="fb-text form-group field-floor">
+		<label for="floor" class="fb-text-label col-sm-offset-1 col-sm-3">Floor(Frame):
+			<span class="required">*</span>
+		</label>
+	</div>
+	<div class="fb-text form-group field-floor col-sm-offset-1 col-sm-4">
+		<input type="text" required="" class="form-control" name="floor" id="floor" aria-required="true">
+	</div>
+</div>
+
+<div class="row">
+	<div class="fb-text form-group field-exterior walls">
+		<label for="exterior walls" class="fb-text-label col-sm-offset-1 col-sm-3">Exterior (Walls):
+			<span class="required">*</span>
+		</label>
+	</div>
+	<div class="fb-text form-group field-exterior walls col-sm-offset-1 col-sm-4" >
+		<input type="text" required="" class="form-control" name="exterior walls" id="exterior walls" aria-required="true">
+	</div>
+</div>
+
+<div class="row">
+	<div class="fb-text form-group field-roof">
+		<label for="roof" class="fb-text-label col-sm-offset-1 col-sm-3">Roof:
+			<span class="required">*</span>
+		</label>
+	</div>
+	<div class="fb-text form-group field-roof col-sm-offset-1 col-sm-4" >
+		<input type="text" required="" class="form-control" name="roof" id="roof" aria-required="true">
+	</div>
+</div>
+
+<div class="row">
+	<div class="fb-text form-group field-int-walls">
+		<label for="int-walls" class="fb-text-label col-sm-offset-1 col-sm-3">Interior Walls:
+			<span class="required">*</span>
+		</label>
+	</div>
+	<div class="fb-text form-group field-int-walls col-sm-offset-1 col-sm-4" >
+		<input type="text" required="" class="form-control" name="int-walls" id="int-walls" aria-required="true">
+	</div>
+</div>
+
+<div class="row">
+	<div class="fb-text form-group field-plumbing">
+		<label for="plumbing" class="fb-text-label col-sm-offset-1 col-sm-3">Plumbing:
+			<span class="required">*</span>
+		</label>
+	</div>
+	<div class="fb-text form-group field-plumbing col-sm-offset-1 col-sm-4" >
+		<input type="text" required="" class="form-control" name="plumbing" id="plumbing" aria-required="true">
+	</div>
+</div>
+
+<div class="row">
+	<div class="fb-text form-group field-heating">
+		<label for="heating" class="fb-text-label col-sm-offset-1 col-sm-3">Heating/AC:
+			<span class="required">*</span>
+		</label>
+	</div>
+	<div class="fb-text form-group field-heating col-sm-offset-1 col-sm-4" >
+		<input type="text" required="" class="form-control" name="heating" id="heating" aria-required="true">
+	</div>
+</div>
+
+<div class="row">
+	<div class="fb-text form-group field-electrical">
+		<label for="electrical" class="fb-text-label col-sm-offset-1 col-sm-3">Electrical:
+			<span class="required">*</span>
+		</label>
+	</div>
+	<div class="fb-text form-group field-electrical col-sm-offset-1 col-sm-4" >
+		<input type="text" required="" class="form-control" name="electrical" id="electrical" aria-required="true">
+	</div>
+</div>
+
+<div class="">
+	<h1 type="h1" class="header col-sm-offset-0 col-sm-12" name="" id="">Damage Category</h1>
+	<br>
+</div>
+
+	<div class="">
+		<h3 type="h3" class="header col-sm-offset-0 col-sm-12" name="" id="">NOTE: none observable refers only to visual inpsection from the dwelling exterior.  These systems can be observed if you able to walk through the dwelling.</h3>
+	</div>
+
+	<div class="row">
+		<div class="fb-text form-group field-destroyed">
+			<label for="destroyed" class="fb-text-label col-sm-offset-1 col-sm-3">Destroyed:
+				<span class="required">*</span>
+			</label>
+		</div>
+		<div class="fb-text form-group field-destroyed col-sm-offset-1 col-sm-4" >
+			<input type="text" required="" class="form-control" name="destroyed" id="destroyed" aria-required="true">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="fb-text form-group field-major">
+			<label for="major" class="fb-text-label col-sm-offset-1 col-sm-3">Major:
+				<span class="required">*</span>
+			</label>
+		</div>
+		<div class="fb-text form-group field-major col-sm-offset-1 col-sm-4" >
+			<input type="text" required="" class="form-control" name="major" id="major" aria-required="true">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="fb-text form-group field-minor">
+			<label for="minor" class="fb-text-label col-sm-offset-1 col-sm-3">Minor:
+				<span class="required">*</span>
+			</label>
+		</div>
+		<div class="fb-text form-group field-minor col-sm-offset-1 col-sm-4" >
+			<input type="text" required="" class="form-control" name="minor" id="minor" aria-required="true">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="fb-text form-group field-affected">
+			<label for="affected" class="fb-text-label col-sm-offset-1 col-sm-3">Affected:
+				<span class="required">*</span>
+			</label>
+		</div>
+		<div class="fb-text form-group field-affected col-sm-offset-1 col-sm-4" >
+			<input type="text" required="" class="form-control" name="affected" id="affected" aria-required="true">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="fb-text form-group field-innaccessbile">
+			<label for="innaccessbile" class="fb-text-label col-sm-offset-1 col-sm-3">Innaccessbile:
+				<span class="required">*</span>
+			</label>
+		</div>
+		<div class="fb-text form-group field-innaccessbile col-sm-offset-1 col-sm-4" >
+			<input type="text" required="" class="form-control" name="innaccessbile" id="innaccessbile" aria-required="true">
+		</div>
+	</div>
+
+	<div class="fb-undefined form-group field-location-comments">
+			<label for="location-comments" class="fb-textarea-label col-sm-offset-0 col-sm-5">Comments:
+			</label>
+			<textarea type="textarea" required="" class="form-control" name="location-comments" id="location-comments" aria-required="true">
+			</textarea>
+	</div>
+
+    <div class="">
+		<h1 type="h1" class="header col-sm-offset-0 col-sm-12" name="" id="">Flood Data</h1>
+		</div>
+
+	<div class="fb-radio form-group field-flood-ins">
+		<label for="flood-ins" class="fb-radio-group-label">Is there flood insurance?
+			<span class="required">*
+			</span>
+		</label>
+		  <div class="radio-group">
+		  <input value="option-1" type="radio" required="" class="radio-group" name="flood-ins" id="flood-ins-0" aria-required="true" checked="">
+		   <label for="flood-ins-0">Yes
+		   </label>
+		      <br>
+		   <input value="option-2" type="radio" required="" class="radio-group" name="flood-ins" id="flood-ins-1" aria-required="true">
+		    <label for="flood-ins-1">No
+		    </label>
+		    </div>
+	</div>
+
+	<div class="row">
+	  <div class="fb-text form-group field-basement-water">
+	    <label for="basement-water" class="fb-text-label col-sm-offset-1 col-sm-4">What is the basement water height(inches)?:
+	      <span class="required">*</span>
+	    </label>
+	  </div>
+	  <div class="fb-text form-group field-basement-water col-sm-offset-0 col-sm-4" >
+	    <input type="text" required="" class="form-control" name="basement-water" id="basement-water" aria-required="true">
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="fb-text form-group field-first-floor-water">
+	    <label for="first-floor-water" class="fb-text-label col-sm-offset-1 col-sm-4">What is the first floor water height(inches)?:
+	      <span class="required">*</span>
+	    </label>
+	  </div>
+	  <div class="fb-text form-group field-first-floor-water col-sm-offset-0 col-sm-4" >
+	    <input type="text" required="" class="form-control" name="first-floor-water" id="first-floor-water" aria-required="true">
+			<br>
+		</div>
+	</div>
+
+	<div class="fb-undefined form-group field-add-comments">
+        <label for="add-comments" class="fb-textarea-label col-sm-offset-0 col-sm-12">Enter any additional comments:
+        </label>
+        <textarea type="textarea" required="" class="form-control" name="add-comments" id="add-comments" aria-required="true">
+        </textarea>
+        </div>
+
+				<div class="space">
+				<!--<div class="col-md-2 pull-right"> -->
+							<button class="round col-xs-offset-3 col-xs-6">
+									 Submit
+							</button>
+					</div>
+
+
+
+</form>
+</body>
+</html>

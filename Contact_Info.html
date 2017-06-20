@@ -1,0 +1,231 @@
+<html>
+	<head>
+		<title>Contact Info</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<link href="RA_CSS.css" rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script type="text/javascript">
+            $(document).ready(function(){
+                $("#County").on("change",function(){
+                    $("#municipality").html("");
+                    var opt = $("<option></option>");
+                        opt.val("Select");
+                        opt.html("-Select your municipality-");
+                        $("#municipality").append(opt);
+                    var counties = new Array();
+                    var temp = $(this).val();
+										counties["Allegheny"] = ["Aleppo","Aspinwall","Avalon","Borough of Baldwin","Baldwin Township","Bell Acres","Bellevue","Ben Avon","Ben Avon Hts.","Bethal Park","Blawnox","Brackenridge","Braddock","Braddock Hills","Bradford Woods","Brentwood","Bridgeville","Carnegie","Castle Shannon","Chalfant","Cheswick","Churchill","Clairton","Collier","Corapolis","Crafton","Crescent","Dormont","Dravosburg","Duquesne","East Deer","East McKeesport","East Pittsburgh","Edgewood","Edgeworth","Borough of Elizabeth","Elizabeth Township","Emsworth","Etna","Fawn","Findlay","Forest Hills","Forward","Fox Chapel","Franklin Park","Frazer","Glassport","Glen Osborne","Glenfield","Green Tree","Hampton","Harmar","Harrison","Haysville","Heidelberg","Homestead","Indiana","Ingram","Jefferson Hills","Kennedy","Kilbuck","Leet","Leetsdale","Liberty","Lincoln","Marshall","McCandless","McDonald","McKeesport","McKees Rocks","Millvale","Monroeville","Moon","Mt. Lebanon","Mt. Oliver","Munhall","Neville","North Braddock","North Fayette","North Versailles","Oakdale","Oakmont","O'Hara","Ohio","Penn Hills","Pennsbury Village","Pine","Pitcairn","Pittsburgh","Pleasant Hills","Plum","Port Vue","Rankin","Reserve","Richland","Robinson","Ross","Rosslyn Farms","Scott","Sewickley","Sewickley Hts.","Sewickley Hills","Shaler","Sharpsburg","South Fayette","South Park","South Versailles","Springdale","Stowe","Swissvale","Tarentem","Thornburg","Trafford","Turtle Creek","Upper St. Clair","Verona","Versailles","Wall","West Deer","West Elizabeth","West Homestead","West Mifflin","West View","Whitaker","White Oak","Whitehall","Wilkins","Wilkinsburg","Wilmerding"];
+                    counties["Washington"] = ["Allenport","Amwell","Beallsville","Bentleyville","Blaine","Buffalo","Burgettstown","California","Canonsburg","Canton","Carroll","Cecil","Centerville","Charleroi","Chartiers","Claysville","Coal Center","Cokesburg","Cross Creek","Deemston","Donegal","Donora","Dunlevy","East Bethlehem","East Finley","East Washington","Elco","Ellsworth","Fallowfield","Finleyville","Green Hills","Hanover","Hopewell","Houston","Independence","Jefferson","Long Branch","Marianna","McDonald","Midway","Monongahela City","Morris","Mount Pleasant","New Eagle","North Bethlehem","North Charleroi","North Franklin","North Strabane","Nottingham","Peters","Robinson","Roscoe","Smith","Somerset","South Franklin","South Strabane","Speers","Stockdale","Twilight","Union","Washington","West Bethlehem","West Brownsville","West Finley","West Middletown","West Pike Run"]
+                    counties["Westmoreland"] = ["Adamsburg","Allegheny Township","Arnold,City of","Arona","Avonmore","Bell Twp","Bolivar","Cook Twp","Delmont","Derry Borough","Derry Twp","Donegal Borough","Donegal Twp","East Huntington Twp","East Vandergfit Borough","Export Borough","Fairfield Twp","Greensburg","Hempfield Twp","Hunker","Hyde Park Borough","Irwin","Jeannette","Latrobe","Laurel Mountain Boro","Ligonier Boro","Ligonier Twp","Lower Burrel","Loyalhanna","Madison","Manor","Monessen","Mt. Pleasant Boro","Mt. Pleasant Twp","Murrysville","New Alexandria","New Florence","New Kensington","New Stanton","North Belle Vernon","Morth Huntington","North Iwrin","Oklahoma","Penn Boro","Penn Twp","Rostraver","Saint Clair","Salem","Scottdale","Seward","Sewickley Twp","Smithton","South Greensburg","South Huntington","Southwest Greensburg","Sutersville","Trafford","Unity","Upper Burrell","Vandergrift","Washington","West Leechburg","West Newton","Youngstown","Youngwood"];
+                    counties["2"] = [" ","c"];
+                    $(counties[temp]).each(function(){
+                        var opt = $("<option></option>");
+                        opt.val(this);
+                        opt.html(this);
+                        $("#municipality").append(opt);
+                    });
+                });
+            });
+        </script>
+	</head>
+
+<body>
+<div class="container">
+<form id="rendered-form">
+
+	<nav class="navbar navbar-default navbar-fixed-top nav">
+	  <div class="container">
+			<img src="Reach and Report.png" alt="Disaster" class = "pull-left" style="width:100px;height:75px;">
+	   <type="text" class="col-sm-8" name="" id="">EMA
+	  </div>
+	</nav>
+	<br>
+	<br>
+	<br>
+
+
+<div class="">
+	<h1 type="h2" class="header pagetitle" name="" id="">Contact Information</h1>
+</div>
+
+<div class="row">
+	<div class="fb-text form-group field-first-name  col-sm-offset-0 col-sm-6" >
+	<label for="first-name" class="fb-text-label ">First Name
+	<span class="required">*</span>
+	</label>
+	</div>
+	<div class="fb-text form-group field-first-name col-sm-offset-1 col-sm-5" >
+	<input type="text" required="" class="form-control adjustbox" name="first-name" id="first-name" aria-required="true">
+	</div>
+</div>
+<div class="row">
+	<div class="fb-text form-group field-first-name  col-sm-offset-0 col-sm-6" >
+	<label for="last-name" class="fb-text-label">Last Name
+	<span class="required">*</span></label>
+	</label>
+	</div>
+	<div class="fb-text form-group field-last-name col-sm-offset-1 col-sm-5" >
+	<input type="text" required="" class="form-control adjustbox" name="last-name" id="last-name" aria-required="true">
+	</div>
+</div>
+
+	<div class="row">
+		<div class="fb-text form-group field-first-name  col-sm-offset-0 col-sm-6" >
+			<label for="date" class="fb-date-label">Date of Damage
+ 			<span class="required">*</span>
+			</label>
+		</div>
+		<div class="fb-text form-group field-last-name col-sm-offset-1 col-sm-5" >
+			<input type="date" required="" class="form-control adjustbox" name="date" id="date" aria-required="true">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="fb-text form-group field-first-name  col-sm-offset-0 col-sm-6" >
+		<label for="address" class="fb-text-label">Street Address <span class="required">*</span>
+ 		</label>
+		</div>
+		<div class="fb-text form-group field-last-name col-sm-offset-1 col-sm-5" >
+		<input type="text" required="" class="form-control adjustbox" name="address" id="address" aria-required="true">
+		 </div>
+	</div>
+	<div class="row">
+		<div class="fb-text form-group field-first-name  col-sm-offset-0 col-sm-6" >
+		<label for="city" class="fb-text-label">City <span class="required">*</span></label>
+		</div>
+		<div class="fb-text form-group field-last-name col-sm-offset-1 col-sm-5" >
+		<input type="text" required="" class="form-control adjustbox" name="city" id="city" aria-required="true">
+		 </div>
+	</div>
+	<div class="row">
+		<div class="fb-text form-group field-first-name  col-sm-offset-0 col-sm-6" >
+		<label for="state" class="fb-text-label">State <span class="required">*</span>
+ 		</label></div>
+		<div class="fb-text form-group field-last-name col-sm-offset-1 col-sm-5" >
+		<input type="text" required="" class="form-control adjustbox" name="state" id="state" aria-required="true">
+		  </div>
+	</div>
+	<div class="row">
+		<div class="fb-text form-group field-first-name  col-sm-offset-0 col-sm-6" >
+		<label for="zipcoder" class="fb-text-label">Zipcode:
+ 		<span class="required">*</span>
+ 		</label>
+	 	</div>
+		<div class="fb-text form-group field-last-name col-sm-offset-1 col-sm-5" >
+		<input type="text" required="" class="form-control adjustbox" name="zipcode" id="zipcode" aria-required="true">
+		  </div>
+	</div>
+	<div class="row">
+		<div class="fb-text form-group field-first-name  col-sm-offset-0 col-sm-6" >
+		<label for="email" class="fb-text-label">Email:
+ 		<span class="required">*</span>
+ 		</label>
+	 	</div>
+		<div class="fb-text form-group field-last-name col-sm-offset-1 col-sm-5" >
+		<input type="text" required="" class="form-control adjustbox" name="email" id="email" aria-required="true">
+		  </div>
+	</div>
+	<div class="row">
+		<div class="fb-text form-group field-first-name  col-sm-offset-0 col-sm-6" >
+		<label for="primary-phone-number" class="fb-text-label">Primary Telephone Number:
+ 		<span class="required">*</span>
+ 		</label>
+	 	</div>
+		<div class="fb-text form-group field-last-name col-sm-offset-1 col-sm-5" >
+		<input type="text" required="" class="form-control adjustbox" name="primary-phone-number" id="primary-phone-number" aria-required="true">
+		  </div>
+	</div>
+	<div class="row">
+		<div class="fb-text form-group field-first-name  col-sm-offset-0 col-sm-6" >
+			<label for="secondary-phone-number" class="fb-text-label">Secondary Telephone Number:
+  		</label>
+	 	</div>
+		<div class="fb-text form-group field-last-name col-sm-offset-1 col-sm-5" >
+			<input type="text" class="form-control adjustbox" name="secondary-phone-number" id="secondary-phone-number">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="fb-text form-group field-first-name  col-sm-offset-0 col-sm-6" >
+			<label for="County" class="fb-text-label">Select Your County *</label>
+	 	</div>
+		<div class="fb-text form-group field-last-name col-sm-offset-1 col-sm-5" >
+			<select class = size="1" id="County" title="" name="County">
+    		<option value="">-Select your county-</option>
+				<option value="Allegheny">Allegheny</option>
+    		<option value="Washington">Washington</option>
+    		<option value="Westmoreland">Westmoreland</option>
+
+			</select>
+		</div>
+	</div>
+
+	<div class="row">
+			<div class="fb-text form-group field-first-name  col-sm-offset-0 col-sm-6" >
+				<label for="Municipality" class="fb-text-label">Select Your Municipality *</label>
+	 		</div>
+		<div class="fb-text form-group field-last-name col-sm-offset-1 col-sm-5" >
+			<select id="municipality" name="municipality">
+    	<option value="">-Select your municipality-</option>
+		</select>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="fb-text form-group field-first-name  col-sm-offset-0 col-sm-6" >
+			<label for="disaster-type" class="fb-radio-group-label">Type of Disaster *
+  		</label>
+	 	</div>
+		<div class="fb-text form-group field-last-name col-sm-offset-1 col-sm-5" >
+			<select size="1" id="Disaster" title="" name="Disaster">
+					<option>Choose Disaster</option>
+	    		<option value="Flood">Flood</option>
+	    		<option value="Fire">Fire</option>
+	    		<option value="Blizzard">Blizzard</option>
+					<option value="Other">Other</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="row">
+
+    <div class="fb-radio form-group field-applicant-type col-sm-offset-0 col-sm-6">
+    	<label for="applicant-type" class="fb-radio-group-label">Type of Applicant/Structure*
+    	</label>
+    </div>
+	<div class="fb-text form-group field-last-name col-sm-offset-1 col-sm-5" >
+
+		<select size="1" id="Applicant-Type" title="" name="Applicant-Type">
+				<option>Choose Applicant/Structure</option>
+				<option value="Renter">Renter</option>
+				<option value="Single Family">Single Family</option>
+				<option value="Multiple Family">Multiple Family</option>
+				<option value="Homeowner">Homeowner</option>
+				<option value="Business">Business</option>
+				<option value="Non-Profit">Non-Profit</option>
+				<option value="Other">Other</option>
+		</select>
+
+        <input type="text" name="applicant-type" id="applicant-type-other-value" style="display:none;">
+    	</div>
+   </div>
+
+ 	<div class = "red col-sm-offset-3 col-sm-6 ital cent">
+	 *indicates required field
+	</div>
+<br>
+<br>
+<br>
+	 <div class="space">
+	 <!--<div class="col-md-2 pull-right"> -->
+				 <button class="round col-sm-offset-3 col-sm-6">
+							Submit
+				 </button>
+		 </div>
+
+</form>
+</div>
+</body>
+</html>

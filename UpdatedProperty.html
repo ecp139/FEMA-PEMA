@@ -1,0 +1,242 @@
+<html>
+    <head>
+        <title>Individual Property Worksheet</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link href="RA_CSS.css" rel="stylesheet" type="text/css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js">
+        </script>
+    </head>
+
+<body>
+<div class="container">
+<form id="rendered-form">
+
+  <nav class="navbar navbar-default navbar-fixed-top nav">
+    <div class="container">
+     <img src="Fire.jpg" alt="Disaster" class = "pull-left" style="width:200px;height:60px;">
+     <type="text" class="align-center" name="" id="">FEMA
+    </div>
+  </nav>
+  <br>
+  <br>
+  <br>
+
+  <h2></h2>
+
+
+<div class="">
+	<h1 type="h1" class="header pagetitle" name="" id=""> Field Worksheet-Individual Property</h1>
+</div>
+
+
+
+<div class="row">
+  <div class="fb-text form-group field-home-choice col-sm-offset-0 col-sm-3" >
+    <label for="home-choice" class="fb-text-label">Location Type *</label>
+  </div>
+  <div class="fb-text form-group field-home-choice col-sm-offset-1 col-sm-5" >
+    <select class = size="1" id="home-choice" title="" name="home-choice">
+      <option value="">-Select your Location-</option>
+      <option value="Home">Home</option>
+      <option value="Mobile Home">Mobile Home</option>
+    </select>
+  </div>
+</div>
+
+<div class="fb-radio form-group field-primary-renter col-sm-offset-0">
+    <label for="primary-renter" class="fb-radio-group-label">Are you the Primary Home Owner or renter?
+    <span class="required">*
+    </span>
+    </label>
+    <div class="radio-group">
+        <input value="option-1" type="radio" required="" class="radio-group" name="primary-renter" id="primary-renter-0" aria-required="true" checked="">
+        <label for="owner-renter-0">Primary Home
+        </label>
+        <br>
+        <input value="option-2" type="radio" required="" class="radio-group" name="primary-renter" id="primary-renter-1" aria-required="true">
+        <label for="primary-renter-1">Renter
+        </label>
+    </div>
+</div>
+
+<div class="row">
+		<div class="fb-text form-group field-latitude  col-sm-offset-0 col-sm-6" >
+		<label for="latitude" class="fb-text-label ">Latitude:
+		</label>
+		</div>
+		<div class="fb-text form-group field-latitude col-sm-offset-1 col-sm-5" >
+		<input type="text" required="" class="form-control adjustbox" name="latitude" id="latitude" aria-required="true">
+		</div>
+	</div>
+
+<div class="row">
+	<div class="fb-text form-group field-longitude col-sm-offset-0 col-sm-6">
+ 		<label for="longitude" class="fb-text-label">Longitude:
+ 		</label>
+	</div>
+    <div class="fb-text form-group field-longitude col-sm-offset-1 col-sm-5">
+  		<input type="text" required="" class="form-control adjustbox" name="longitude" id="longitude" aria-required="true">
+  		</div>
+</div>
+
+<div class = "row">
+    <div class="fb-undefined form-group field-location-comments col-sm-12">
+        <label for="location-comments" class="fb-textarea-label">Enter any location comments:
+        </label>
+        <textarea type="textarea" required="" class="form-control" name="location-comments" id="location-comments" aria-required="true">
+        </textarea>
+        </div>
+</div>
+
+	<div class="">
+	<h1 type="h1" class="header" name="" id="">Enter amount of damages to home in each area (Percentage of R.C.)</h1>
+	</div>
+
+ 	<div class="fb-number form-group field-foundation ">
+        <label for="foundation" class="fb-number-label">Foundation
+       	</label>
+        <p>(7% for home, not used for mobile)
+        </p>
+        <input type="number" class="form-control" name="foundation" id="foundation">
+        </div>
+	<div class="fb-number form-group field-floor">
+        <label for="floor" class="fb-number-label">Floor(Frame)
+       	</label>
+        <p>(16% for home, 20% for mobile)
+        </p>
+        <input type="number" class="form-control" name="floor" id="floor">
+        </div>
+    <div class="fb-number form-group field-ext-walls">
+        <label for="ext-walls" class="fb-number-label">Exterior Walls
+       	</label>
+         <p>(14% for home, 35% for mobile)
+        </p>
+        <input type="number" class="form-control" name="ext-walls" id="ext-walls">
+        </div>
+	<div class="fb-number form-group field-roof">
+        <label for="roof" class="fb-number-label">Roof
+       	</label>
+         <p>(9% for home, 20% for mobile)
+        </p>
+        <input type="number" class="form-control" name="roof" id="roof">
+        </div>
+    <div class="fb-number form-group field-int-walls">
+        <label for="int-walls" class="fb-number-label">Interior Walls
+       	</label>
+         <p>(28% for home, 25% for mobile)
+        </p>
+        <input type="number" class="form-control" name="int-walls" id="int-walls">
+        </div>
+    <div class="fb-number form-group field-plumbing">
+        <label for="plumbing" class="fb-number-label">Plumbing
+       	</label>
+        <p>(10% for home, not used for mobile)
+        </p>
+        <input type="number" class="form-control" name="plumbing" id="plumbing">
+        </div>
+    <div class="fb-number form-group field-heating">
+        <label for="heating" class="fb-number-label">Heating/A.C.
+       	</label>
+        <p>(10% for home, not used for mobile)
+        </p>
+        <input type="number" class="form-control" name="heating" id="heating">
+        </div>
+	<div class="fb-number form-group field-electrical">
+        <label for="electrical" class="fb-number-label">Electrical
+       	</label>
+        <p>(10% for home, not used for mobile)
+        </p>
+        <input type="number" class="form-control" name="electrical" id="electrical">
+        </div>
+
+	<div class="">
+		<h1 type="h1" class="header" name="" id="">Damage Category</h1>
+		</div>
+	<div class="">
+		<h3 type="h3" class="header" name="" id="">NOTE: none observable refers only to visual inpsection from the dwelling exterior.  These systems can be observed if you able to walk through the dwelling.</h3>
+		</div>
+
+
+    <div class="row">
+      <div class="fb-text form-group field-damage-category col-sm-offset-0 col-sm-4" >
+        <label for="damage-category" class="fb-text-label">Damage Category *</label>
+      </div>
+      <div class="fb-text form-group field-damage-category col-sm-offset-1 col-sm-5" >
+        <select class = size="1" id="damage-category" title="" name="damage-category">
+          <option value="">-Select Category-</option>
+          <option value="Destroyed">Destroyed</option>
+          <option value="Major">Major</option>
+          <option value="Minor">Minor</option>
+          <option value="Affected">Affected</option>
+          <option value="Inaccessible">Inaccessible</option>
+        </select>
+      </div>
+    </div>
+
+	<div class="fb-undefined form-group field-comments">
+        <label for="comments" class="fb-textarea-label">Comments:
+        </label>
+        <textarea type="textarea" required="" class="form-control" name="comments" id="comments" aria-required="true">
+        </textarea>
+        </div>
+
+    <div class="">
+		<h1 type="h1" class="header" name="" id="">Flood Data</h1>
+		</div>
+	<div class="fb-radio form-group field-flood-ins">
+   		<label for="flood-ins" class="fb-radio-group-label">Is there Flood Insurance?
+    	<span class="required">*
+    	</span>
+    	</label>
+      	<div class="radio-group">
+     	<input value="option-1" type="radio" required="" class="radio-group" name="flood-ins" id="flood-ins-0" aria-required="true" checked="">
+       	<label for="flood-ins-0-0">Yes
+       	</label>
+       		<br>
+       	<input value="option-2" type="radio" required="" class="radio-group" name="flood-ins" id="flood-ins-1" aria-required="true">
+        <label for="flood-ins-1">No
+        </label>
+   		 </div>
+	<div class="fb-number form-group field-basement-water">
+        <label for="basement-water" class="fb-number-label">What is the basement water height(in inches)
+       	</label>
+        <input type="number" class="form-control" name="basement-water" id="basement-water">
+        </div>
+    <div class="fb-number form-group field-first-floor-water">
+        <label for="first-floor-water" class="fb-number-label">What is the first floor water height(in inches)
+       	</label>
+        <input type="number" class="form-control" name="first-floor-water" id="first-floor-water">
+        </div>
+
+	<div class="fb-undefined form-group field-add-comments">
+        <label for="add-comments" class="fb-textarea-label">Enter any additional comments:
+        </label>
+        <textarea type="textarea" required="" class="form-control" name="add-comments" id="add-comments" aria-required="true">
+        </textarea>
+        </div>
+
+				<div class="space">
+				<!--<div class="col-md-2 pull-right"> -->
+							<button class="round col-sm-offset-3 col-sm-6">
+									 Submit
+							</button>
+					</div>
+
+  <div class="fb-number form-group field-basement-water">
+      <label for="assessor" class="fb-number-label">Name of Assessor:
+    	</label>
+      <input type="text" class="form-control" name="assessor" id="assessor">
+  </div>
+
+  <div class="fb-number form-group field-date">
+      <label for="date" class="fb-number-label">Date:
+    	</label>
+      <input type="text" class="form-control" name="date" id="date">
+      </div>
+
+</form>
+</div>
+</body>
+</html>
